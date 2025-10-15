@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rutuja's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>XYZ</h1>
+    <nav>
+      <button onclick="scrollToSection('about')">About</button>
+      <button onclick="scrollToSection('skills')">Skills</button>
+      <button onclick="scrollToSection('projects')">Projects</button>
+      <button onclick="scrollToSection('recommendations')">Recommendations</button>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-box">
+      <img src="Photo.jpg" alt="Profile" class="profile-img" />
+      <p>Hello! I'm <strong>XYZ</strong>, a passionate front-end developer with experience in building modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, and React. I love clean code, elegant design, and solving real-world problems through technology.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-box">
+      <div class="skill"><img src="html5-01_icon-icons.com_50875.png" /><p>HTML</p></div>
+      <div class="skill"><img src="css.png" /><p>CSS</p></div>
+      <div class="skill"><img src="JS.png" /><p>JavaScript</p></div>
+      <div class="skill"><img src="python_18894.png" /><p>Python</p></div>
+      <div class="skill"><img src="react.png" /><p>React</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-box">
+      <div class="project">💻 <strong>Portfolio Website:</strong> A responsive and stylish personal portfolio website built with HTML, CSS, and JavaScript.</div>
+      <div class="project">📊 <strong>Data Dashboard:</strong> An interactive React-based dashboard with dynamic charts using Chart.js.</div>
+      <div class="project">📱 <strong>Weather App:</strong> A live weather app built using HTML, CSS, JavaScript, and OpenWeatherMap API.</div>
+    </div>
+  </section>
+
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div id="reco-list">
+      <p>"XYZ is a hardworking and talented developer!" – Alice</p>
+      <p>"Always delivers work on time and with great quality." – Bob</p>
+      <p>"A pleasure to collaborate with." – Carol</p>
+    </div>
+    <form id="reco-form">
+      <textarea id="newReco" placeholder="Write a new recommendation..." required></textarea><br />
+      <button type="submit">Submit Recommendation</button>
+    </form>
+  </section>
+
+  <div id="popup">Thank you for leaving a recommendation!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
